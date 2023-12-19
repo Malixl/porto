@@ -13,14 +13,14 @@ body {
 }
 
 .nav-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 nav {
-  position: fixed;
-  height: 8%;
+  height: 60px;
   margin-bottom: 1.5rem;
   display: flex;
   justify-content: center;
@@ -57,17 +57,17 @@ a {
   color: black;
 }
 
-div {
-  height: 100vh;
-}
-
 #hero {
+  height: 100vh;
 }
 #about {
   background-color: #d5fafc;
+  height: 100vh;
 }
 #project {
+  height: 100vh;
 }
 #contact {
   background-color: #18609a;
+  height: 100vh;
 }
