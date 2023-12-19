@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -11,10 +12,18 @@ body {
   font-family: "poppins";
 }
 
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 nav {
   position: fixed;
-  width: 100%;
-  margin-top: 1rem;
+  height: 8%;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 ul {
@@ -22,9 +31,25 @@ ul {
   display: flex;
   gap: 5em;
   justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.52);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.9px);
+  -webkit-backdrop-filter: blur(8.9px);
+  padding: 0 2em;
+  font-weight: bold;
 }
 
 li {
+}
+
+li > i {
+  display: none; /* Sembunyikan tag <i> pada layar kecil */
+}
+
+nav > li > a > i {
+  display: none;
 }
 
 a {
@@ -34,4 +59,15 @@ a {
 
 div {
   height: 100vh;
+}
+
+#hero {
+}
+#about {
+  background-color: #d5fafc;
+}
+#project {
+}
+#contact {
+  background-color: #18609a;
 }
