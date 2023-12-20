@@ -12,6 +12,9 @@ body {
   font-family: "poppins";
 }
 
+main {
+}
+
 .nav-wrapper {
   position: fixed;
   bottom: 0;
@@ -32,11 +35,11 @@ ul {
   gap: 5em;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.52);
+  background: rgba(38, 205, 100, 0.46);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.9px);
-  -webkit-backdrop-filter: blur(8.9px);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
   padding: 0 2em;
   font-weight: bold;
 }
@@ -57,17 +60,100 @@ a {
   color: black;
 }
 
-#hero {
+img {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hero {
   height: 100vh;
 }
-#about {
-  background-color: #d5fafc;
+.about {
   height: 100vh;
+}
+.project {
+  height: 100vh;
+}
+.contact {
+  height: 100vh;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15rem;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.text-hero {
+  margin-right: 10rem;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#about {
+  background-color: #b6c4b6;
 }
 #project {
-  height: 100vh;
 }
 #contact {
-  background-color: #18609a;
-  height: 100vh;
+  background-color: #b6c4b6;
 }
+
+.myname {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+//typing start
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #125c13;
+  margin-left: 7pt;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+//typing end

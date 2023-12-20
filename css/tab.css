@@ -1,0 +1,19 @@
+@media (max-width: 868px) {
+  section {
+    padding: 0 2rem;
+  }
+
+  .text-hero {
+    margin-bottom: 40pt;
+    margin-right: 0;
+  }
+
+  .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-wrapper {
+    justify-content: center;
+  }
+}
