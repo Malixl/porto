@@ -92,8 +92,14 @@ section {
   align-items: center;
 }
 
+.text-img-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
 .text-hero {
-  margin-right: 10rem;
+  margin-right: 28rem;
 }
 
 .img-wrapper {
@@ -112,7 +118,12 @@ section {
 
 .myname {
   font-weight: bold;
-  font-size: 150%;
+  font-size: 30pt;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 //typing start
@@ -138,6 +149,16 @@ section {
 }
 .container p span.cursor.typing {
   animation: none;
+}
+
+.sosmed-wrapper {
+  padding-top: 10rem;
+}
+
+.sosmed {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
 }
 @keyframes blink {
   0% {
