@@ -15,8 +15,13 @@
 }
 
 @media (max-width: 868px) {
-  section {
+  ul {
+    gap: 3em;
+  }
+
+  .hero > section {
     padding: 0 2rem;
+    padding-bottom: 2rem;
   }
 
   .text-hero {
