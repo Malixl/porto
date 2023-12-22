@@ -12,6 +12,11 @@
     display: flex;
     flex-direction: column;
   }
+
+  .hs-icon {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 868px) {
@@ -20,6 +25,11 @@
   }
 
   .hero > section {
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #about > section {
     padding: 0 2rem;
     padding-bottom: 2rem;
   }

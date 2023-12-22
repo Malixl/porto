@@ -61,7 +61,7 @@ a {
   color: black;
 }
 
-img {
+.img-wrapper > img {
   width: 128px;
   height: 128px;
   object-fit: cover;
@@ -71,11 +71,9 @@ img {
 .hero {
   height: 100vh;
 }
-.about {
-  height: 100vh;
-}
+
 .project {
-  height: 100vh;
+  height: 100%;
 }
 .contact {
   height: 100vh;
@@ -113,7 +111,13 @@ img {
 }
 
 #about {
-  background-color: #b6c4b6;
+  background-color: #dde5dd;
+  height: 100%;
+}
+
+.about > section {
+  height: 100%;
+  padding: 0 13rem;
 }
 
 .sf-heading {
@@ -127,38 +131,43 @@ img {
 .card-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
-  gap: 5rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  gap: 3rem;
 }
 
 .card-skill {
   background-color: #1b4242;
   color: white;
-  width: 15rem;
-  height: 15rem;
+  width: 13rem;
+  height: 13rem;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   transition: 0.4s;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .card-skill:hover {
   background-color: white;
-  color: black;
+  color: #1b4242;
 }
 
 .card-skill > i {
   display: flex;
   justify-content: center;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .card-skill > p {
-  font-size: 15pt;
+  font-size: 13pt;
   font-weight: bold;
+}
+
+.hard-skill {
+  padding-bottom: 4rem;
 }
 
 .hs-heading {
@@ -167,6 +176,23 @@ img {
   color: #1b4242;
   padding-top: 6rem;
   font-size: 2rem;
+}
+
+.hs-icon {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.hs-icon > img {
+  width: 5rem;
+  padding: 1rem;
+  mix-blend-mode: luminosity;
+}
+
+.hs-icon > img:hover {
+  background-color: white;
+  border-radius: 8px;
 }
 
 #project {
