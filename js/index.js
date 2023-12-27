@@ -65,7 +65,5 @@ const sendwhatsapp = () => {
       message +
       "%0a%0a";
     window.open(url, "_blank").focus();
-  } else {
-    alert("Please type your name, email, and message.");
   }
 };
