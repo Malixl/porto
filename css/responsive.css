@@ -13,6 +13,14 @@
   .text-hero {
     margin-right: 8rem;
   }
+
+  .project > section {
+    padding: 0 9rem;
+  }
+
+  .contact > section {
+    padding: 10rem 20rem;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -34,11 +42,25 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  .project > section {
+    padding: 0 9rem;
+  }
+
+  .contact > section {
+    padding: 10rem 13rem;
+  }
 }
 
 @media (max-width: 868px) {
   ul {
     gap: 3em;
+  }
+
+  .hs-icon > img {
+    width: 4rem;
+    padding: 1rem;
+    mix-blend-mode: luminosity;
   }
 
   .hero > section {
@@ -67,6 +89,20 @@
   }
 
   .img-wrapper {
+    justify-content: center;
+  }
+
+  .project > section {
+    padding: 5rem 2rem;
+    padding-bottom: 2rem;
+  }
+  .contact > section {
+    padding: 9rem 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }

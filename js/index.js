@@ -1,7 +1,7 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["UI/UX Designer", "Graphic Designer", "Front-End Developer"];
+const textArray = ["UI/UX Designer", "Front-End Developer", "Graphic Designer"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000;
@@ -42,3 +42,30 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function () {
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+//wangsaf
+const sendwhatsapp = () => {
+  const phonenumber = "+6283119230298";
+  const name = document.querySelector(".name").value;
+  const email = document.querySelector(".email").value;
+  const message = document.querySelector(".message").value;
+
+  if (name && email && message) {
+    const url =
+      "https://wa.me/" +
+      phonenumber +
+      "?text=" +
+      "*Name :* " +
+      name +
+      "%0a" +
+      "*Email :* " +
+      email +
+      "%0a" +
+      "*Message :* " +
+      message +
+      "%0a%0a";
+    window.open(url, "_blank").focus();
+  } else {
+    alert("Please type your name, email, and message.");
+  }
+};
