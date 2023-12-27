@@ -214,7 +214,6 @@ a {
   gap: 2rem;
 }
 
-//typing start
 .container p {
   font-size: 3rem;
   padding: 0.5rem;
@@ -256,7 +255,6 @@ a {
     background-color: #ccc;
   }
 }
-//typing end
 
 .project {
   height: 100vh;
