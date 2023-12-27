@@ -254,11 +254,11 @@ a {
 }
 
 .project {
-  height: 100vh;
+  height: 100%;
 }
 
 .project > section {
-  padding: 5rem 15rem;
+  padding: 10rem 15rem;
 }
 
 .project-heading > h1 {
@@ -345,7 +345,7 @@ h3 {
 }
 
 .contact > section {
-  padding: 10rem 30rem;
+  padding-bottom: 10rem;
 }
 
 .contact-container {

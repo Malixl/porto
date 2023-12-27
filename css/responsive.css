@@ -19,7 +19,7 @@
   }
 
   .contact > section {
-    padding: 10rem 20rem;
+    padding-bottom: 10rem;
   }
 }
 
@@ -44,11 +44,11 @@
   }
 
   .project > section {
-    padding: 0 9rem;
+    padding: 5rem 9rem;
   }
 
   .contact > section {
-    padding: 10rem 13rem;
+    padding-bottom: 6rem;
   }
 }
 
