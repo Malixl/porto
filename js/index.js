@@ -50,20 +50,18 @@ const sendwhatsapp = () => {
   const email = document.querySelector(".email").value;
   const message = document.querySelector(".message").value;
 
-  if (name && email && message) {
-    const url =
-      "https://wa.me/" +
-      phonenumber +
-      "?text=" +
-      "*Name :* " +
-      name +
-      "%0a" +
-      "*Email :* " +
-      email +
-      "%0a" +
-      "*Message :* " +
-      message +
-      "%0a%0a";
-    window.open(url, "_blank").focus();
-  }
+  const url =
+    "https://wa.me/" +
+    phonenumber +
+    "?text=" +
+    "*Name :* " +
+    name +
+    "%0a" +
+    "*Email :* " +
+    email +
+    "%0a" +
+    "*Message :* " +
+    message +
+    "%0a%0a";
+  window.open(url, "_blank").focus();
 };
