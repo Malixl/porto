@@ -152,6 +152,10 @@ a {
   flex-direction: column;
 }
 
+.desc > a {
+  color: #1b4242;
+}
+
 .sosmed-wrapper {
   padding-top: 10rem;
 }
